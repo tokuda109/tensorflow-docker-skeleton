@@ -11,7 +11,10 @@ __all__ = (
 # Project code
 # ==========================================================
 
-PROJECT_CODE = u"tensorflow-docker-skeleton"
+PROJECT_CODE = os.environ.get(
+    "PROJECT_CODE",
+    "tensorflow-docker-skeleton"
+)
 
 # ==========================================================
 # Port settings
@@ -31,7 +34,10 @@ BUCKET_NAME = ""
 # Docker Hub
 # ==========================================================
 
-DOCKER_USERNAME = ""
+DOCKER_USERNAME = os.environ.get(
+    "DOCKER_USERNAME",
+    ""
+)
 
 # ==========================================================
 # End of configurable settings. Do not edit below this line.
