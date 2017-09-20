@@ -1,1 +1,1 @@
-# TensorFlow Docker Skeleton &middot; ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+# TensorFlow Docker Skeleton &middot; ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg) [![CircleCI](https://circleci.com/gh/tokuda109/tensorflow-docker-skeleton/tree/master.svg?style=svg&circle-token=47409f3138010c606f60e578b53022f8bf22ae07)](https://circleci.com/gh/tokuda109/tensorflow-docker-skeleton/tree/master)
