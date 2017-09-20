@@ -1,0 +1,5 @@
+docker==2.5.1
+fabric==1.14.0
+flake8==3.4.1
+google-cloud-storage==1.4.0
+requests==2.18.4

@@ -1,0 +1,7 @@
+checkpoint/*
+dataset/*
+tensorboard/*
+
+*.zip
+
+!.gitkeep

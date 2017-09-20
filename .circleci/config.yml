@@ -1,0 +1,22 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: circleci/python:2.7.13
+    steps:
+      - checkout
+      - setup_remote_docker:
+          reusable: true
+      - run:
+          name: Install dependencies
+          command: sudo pip install -r requirements.txt
+      - run:
+          name: Build Docker image
+          command: fab build
+      - run:
+          name: Run lint
+          command: fab lint
+      - run:
+          name: Run unit tests
+          command: fab test
