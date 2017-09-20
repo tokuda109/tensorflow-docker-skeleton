@@ -33,8 +33,6 @@ def download_dataset(gcp):
 
     blob = bucket.blob(blob_path)
 
-    print blob
-
     zipfile_path = os.path.join(config.get("tmp_path"), "dataset.zip")
     has_zipfile = os.path.exists(zipfile_path)
 

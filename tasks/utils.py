@@ -17,4 +17,4 @@ def is_gpu_server():
 def is_circleci():
     """
     """
-    return os.environ.get("CIRCLECI") == "true"
+    return "CIRCLECI" in os.environ
