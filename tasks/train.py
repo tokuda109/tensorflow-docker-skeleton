@@ -53,6 +53,17 @@ def download_dataset(gcp):
 @task
 @machine_client
 @docker_client
+def clear_tensorboard(machine, docker):
+    """
+    """
+    _args = ["rm", "-rf", "/root/tmp/tensorboard"]
+
+    docker.run_or_exec(_args)
+
+
+@task
+@machine_client
+@docker_client
 def train(machine,
           docker,
           max_steps=10000,
