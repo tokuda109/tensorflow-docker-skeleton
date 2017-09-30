@@ -2,16 +2,18 @@
 
 Project skeleton and CLI tools for TensorFlow and Docker.
 
+[![asciicast](https://asciinema.org/a/140327.png)](https://asciinema.org/a/140327)
+
 ## Tech Stack
 
 * Docker
 * Python
-* TensorFlow
-* Numpy
-* Scipy
-* Jupyter
-* Matplotlib
-* Pandas
+* [TensorFlow](https://www.tensorflow.org)
+* [Numpy](http://www.numpy.org)
+* [Scipy](https://www.scipy.org)
+* [Jupyter](http://jupyter.org)
+* [Matplotlib](https://matplotlib.org)
+* [Pandas](http://pandas.pydata.org)
 
 ## Directory Layout
 
