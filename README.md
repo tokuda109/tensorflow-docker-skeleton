@@ -37,6 +37,16 @@ Project skeleton and CLI tools for TensorFlow and Docker.
 $ pip install -r requirements.txt
 ```
 
+### Prepare config file & Google Cloud Storage key file
+
+Copy and edit `config-sample.py` to `config.py`.
+
+```sh
+$ cp ./tasks/config-sample.py ./tasks/config.py
+```
+
+And set your `PROJECT_CODE`, `BUCKET_NAME` and `DOCKER_USERNAME`.
+
 ### Prepare guest machine
 
 ```sh
@@ -56,6 +66,12 @@ Run webserver, jupyter notebooks server and tensorboard server.
 ```sh
 $ fab run
 ```
+
+and then connect your browser to:
+
+* http://localhost:8888 for Jupyter Notebook
+* http://localhost:6006 for TensorBoard
+* http://localhost:8080 for Demo server
 
 ### Exec training program
 
