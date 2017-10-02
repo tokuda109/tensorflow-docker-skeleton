@@ -2,9 +2,29 @@
 <html>
 <head>
 <meta charset="utf-8">
+<title>Demo App</title>
+<link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.ico') }}">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.4/angular-material.min.css">
 </head>
 
-<body>
+<body ng-app="demo" ng-cloak>
+<md-toolbar class="md-primary">
+  <div class="md-toolbar-tools">
+    <h2 flex md-truncate>Demo App</h2>
+  </div>
+</md-toolbar>
+<main role="main">
 {%- block content %}{% endblock %}
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-aria.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.4/angular-material.min.js"></script>
+<script type="text/javascript">
+angular
+  .module("demo", ["ngMaterial"])
+  .controller('AppController', function() {
+  });
+</script>
 </body>
 </html>

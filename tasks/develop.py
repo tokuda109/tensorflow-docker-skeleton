@@ -84,7 +84,7 @@ def run(machine, docker, cmd=None, daemon=False):
     if not is_circleci():
         _args += " -p {:04d}:6006".format(config.get("tensorboard_port"))
         _args += " -p {:04d}:8888".format(config.get("jupyter_port"))
-        _args += " -p {:04d}:8000".format(config.get("webserver_port"))
+        _args += " -p {:04d}:8080".format(config.get("webserver_port"))
 
         _args += " -v {}/notebooks:/root/notebooks".format(config.get("base_path"))
         _args += " -v {}/src:/root/src".format(config.get("base_path"))
