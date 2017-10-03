@@ -29,6 +29,11 @@ __all__ = (
 def up(machine, virtualbox):
     """
     Creates and configures guest machines.
+
+    :param machine:
+    :type machine: :class:`tasks.client.MachineClient`
+    :param virtualbox:
+    :type virtualbox: :class:`tasks.client.VirtualboxClient`
     """
     if machine.is_running:
         print msg.up_already_running
@@ -51,6 +56,12 @@ def up(machine, virtualbox):
 @docker_client
 def build(machine, docker):
     """
+    Build docker image.
+
+    :param machine:
+    :type machine: :class:`tasks.client.MachineClient`
+    :param docker:
+    :type docker: :class:`tasks.client.DockerClient`
     """
     if is_gpu_server():
         build_type = "gpu"
@@ -70,6 +81,14 @@ def build(machine, docker):
 @docker_client
 def run(machine, docker, cmd=None, daemon=False):
     """
+    :param machine:
+    :type machine: :class:`tasks.client.MachineClient`
+    :param docker:
+    :type docker: :class:`tasks.client.DockerClient`
+    :param cmd:
+    :type cmd: str
+    :param daemon:
+    :type daemon: boolean
     """
     _args = ""
 

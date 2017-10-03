@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
 
-from os import getenv
-from os.path import exists, join, pathsep, sep
+from os.path import sep
 from subprocess import Popen, PIPE
 import sys
 
 from fabric.api import local
 from fabric.colors import blue, cyan
+
+from utils import which
 
 __all__ = (
     "AnonymousCommand",
@@ -38,26 +39,12 @@ class BasicCommand(BaseCommand):
     def __init__(self, command=None):
         """
         """
-        full_path = self._which(command)
+        full_path = which(command)
 
         if full_path is None:
             raise RuntimeError("Command not found.")
 
         self.command = full_path
-
-    def _which(self, command):
-        """
-        """
-        result = None
-
-        for p in getenv("PATH").split(pathsep):
-            full_path = join(p, command)
-
-            if exists(full_path):
-                result = full_path
-                break
-
-        return result
 
     def run(self, args=None, show_stream=False):
         """
