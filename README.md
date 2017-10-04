@@ -7,6 +7,7 @@ Project skeleton and CLI tools for TensorFlow and Docker.
 ## Tech Stack
 
 * Docker
+* VirtualBox
 * Python
 * [TensorFlow](https://www.tensorflow.org)
 * [Numpy](http://www.numpy.org)
@@ -28,6 +29,11 @@ Project skeleton and CLI tools for TensorFlow and Docker.
 ├─ tests       #:
 └─ tmp         #:
 ```
+
+## Prerequisites
+
+1. Install Docker and VirtualBox.
+2. If you plan to use the GPU version, install the [drivers](https://www.nvidia.com/Download/index.aspx?lang=en-us) and [nvidia-docker](https://github.com/NVIDIA/nvidia-docker).
 
 ## Getting Started
 
