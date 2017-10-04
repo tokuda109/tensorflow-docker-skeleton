@@ -7,7 +7,6 @@
 
 .coverage
 
-notebooks/*
 tasks/config.py
 tasks/gcp_key_file.json
 tests/results/*
