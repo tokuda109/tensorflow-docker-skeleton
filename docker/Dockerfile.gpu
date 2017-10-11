@@ -53,6 +53,10 @@ RUN pip3 install --no-cache-dir \
 
 RUN python3 -m ipykernel.kernelspec
 
+RUN jupyter contrib nbextension install --user
+
+RUN jupyter nbextension enable nbext
+
 COPY ./etc/gunicorn.conf.py /etc/gunicorn.conf.py
 COPY ./etc/jupyter_notebook_config.py .jupyter/
 COPY ./etc/supervisor_tensorboard.conf /etc/supervisor/conf.d/tensorboard.conf
