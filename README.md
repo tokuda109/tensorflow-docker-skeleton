@@ -16,18 +16,23 @@ Project skeleton and CLI tools for TensorFlow and Docker.
 * [Matplotlib](https://matplotlib.org)
 * [Pandas](http://pandas.pydata.org)
 
+## TODO
+
+* [ ] Make it work with [Google Cloud Machine Learning Engine](https://cloud.google.com/ml-engine/).
+* [ ] Bundle [Revision](https://pypi.python.org/pypi/revision) package.
+
 ## Directory Layout
 
 ```sh
-├─ docker      #:
-├─ etc         #:
-├─ notebooks   #:
+├─ docker      #: contains CPU / GPU version of Dockerfile.
+├─ etc         #: contains configs of process to be used in the container.
+├─ notebooks   #: directory for putting .ipynb files.
 ├─ src         #:
-│  ├─ server   #:
-│  └─ train    #:
-├─ tasks       #:
-├─ tests       #:
-└─ tmp         #:
+│  ├─ server   #: directory for demo server.
+│  └─ train    #: directory for training scripts.
+├─ tasks       #: directory for task definitions.
+├─ tests       #: directory for test files.
+└─ tmp         #: directory for temporary files.
 ```
 
 ## Prerequisites
