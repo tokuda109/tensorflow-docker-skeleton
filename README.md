@@ -16,11 +16,6 @@ Project skeleton and CLI tools for TensorFlow and Docker.
 * [Matplotlib](https://matplotlib.org)
 * [Pandas](http://pandas.pydata.org)
 
-## TODO
-
-* [ ] Make it work with [Google Cloud Machine Learning Engine](https://cloud.google.com/ml-engine/).
-* [ ] Bundle [Revision](https://pypi.python.org/pypi/revision) package.
-
 ## Directory Layout
 
 ```sh
