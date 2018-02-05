@@ -4,12 +4,16 @@ Project skeleton and CLI tools for TensorFlow and Docker.
 
 [![asciicast](https://asciinema.org/a/140327.png)](https://asciinema.org/a/140327)
 
-## Tech Stack
+## Specs
 
 * Docker
 * VirtualBox
 * Python
+* [CUDA](https://developer.nvidia.com/cuda-toolkit)
+* [cuDNN](https://developer.nvidia.com/cudnn)
 * [TensorFlow](https://www.tensorflow.org)
+* [Sonnet](https://deepmind.github.io/sonnet/)
+* [scikit-learn](http://scikit-learn.org)
 * [Numpy](http://www.numpy.org)
 * [Scipy](https://www.scipy.org)
 * [Jupyter](http://jupyter.org)
@@ -32,7 +36,8 @@ Project skeleton and CLI tools for TensorFlow and Docker.
 
 ## Prerequisites
 
-1. Install Docker and VirtualBox.
+1. Install Docker following [the installation guide](https://docs.docker.com/install/) for your platform.
+2. Install VirtualBox.
 2. If you plan to use the GPU version, install the [drivers](https://www.nvidia.com/Download/index.aspx?lang=en-us) and [nvidia-docker](https://github.com/NVIDIA/nvidia-docker).
 
 ## Getting Started
